@@ -3,14 +3,6 @@
   margin: 0;
   padding: 0;
 }
-#container {
-  width: 100%;
-  margin: 0 auto;
-  min-height: 100vh;
-  max-width: 20000px;
-  display: flex;
-  flex-direction: column;
-}
 .header_left img {
   object-fit: contain;
   height: 80px;
@@ -18,12 +10,11 @@
 }
 .header {
   display: flex;
-
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid whitesmoke;
+  
 }
-
 .header_left {
   display: flex;
   align-items: center;
@@ -46,7 +37,7 @@
 .header_middle input {
   border: none;
   width: 100%;
-  padding-left: 100mm;
+  padding: 10px;
   outline: none;
   font-size: medium;
   background-color: transparent;
@@ -54,12 +45,13 @@
 
 .header_right {
   display: flex;
-  padding-left: 50mm;
+  padding-right: 20px;
 }
 .header_right span {
   padding: 10px;
   cursor: pointer;
 }
+
 
 #sidebar {
   flex: 03;
@@ -119,6 +111,7 @@
   cursor: row-resize;
 }
 .sidebarOption_new h2 {
+  flex: 1;
   margin-left: 10px;
   font-weight: 400;
   font-size: large;
@@ -148,10 +141,8 @@ body {
   overflow: hidden;
 }
 .emailList {
-  display: flex;
-  flex: 90%;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex: 1;
+  overflow: scroll;
 }
 .emailList_settings {
   position: relative;
@@ -163,19 +154,51 @@ body {
 
   padding: 8px;
 }
-.emailList_settingleft {
+.emailList_settingsleft {
   display: flex;
-
   align-items: center;
 }
 .emailList_settings .material-icons {
   margin: 5px;
   cursor: pointer;
 }
-.emailList_settingright {
+.section {
   display: flex;
 
-  padding-left: 230mm;
+  align-items: center;
+  border-bottom-width: 2px;
+  padding: 15px;
+
+  cursor: pointer;
+  color: gray;
+  border-width: 0px;
+}
+.emailList_section {
+  position: relative;
+  top: 0;
+  display: flex;
+  background-color: white;
+  border-bottom: 1px solid whitesmoke;
+
+  padding-top: 20px;
+}
+.section_selected {
+  background-color: whitesmoke;
+  border-width: 3px;
+  color: red;
+
+  border-bottom: 3px solid red;
+}
+.section_selected .material-icons {
+  color: red;
+}
+.secction:hover {
+  background-color: whitesmoke;
+  border-width: 3px;
+}
+.section h4 {
+  font-size: 14px;
+  margin-left: 15px;
 }
 .emailrow_option {
   display: flex;
@@ -194,10 +217,9 @@ input {
 
   padding-top: 10px;
 }
-.emailrow .rowicon:hover {
+.emailrow:hover {
   border-top: 1px solid whitesmoke;
   box-shadow: 0 4px -2px rgba(0, 0, 0, 0.24);
-  visibility: visible;
 }
 .emailrow_message {
   display: flex;
@@ -228,6 +250,15 @@ input {
   color: gray;
 }
 
+.body_right .material-icons {
+  cursor: pointer;
+  padding-left: 5px;
+
+  padding-right: 20px;
+  flex: 0.3;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
 .block1 {
   padding-top: 50px;
   float: left;
@@ -244,27 +275,12 @@ input {
   text-align: center;
 }
 
-.body_right .material-icons {
-  cursor: pointer;
-  padding-left: 5px;
-
-  padding-right: 20px;
-  flex: 0.3;
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
-.rowicon span {
- height: 30px;
- width: 30px;
- background-color: whitesmoke;
- border-radius: 50%;
-}
-
-@media (min-width: 400px) {
-  #container .emailList .body_right .header .header_right {
-    width: 200px;
+@media  (max-width: 500px) {
+  .footer .main_body .header  {
+    width: 400px;
+    flex-wrap: wrap;
   }
-}
-.body_right {
-  background-color: lightgreen;
+  img {
+    width: 100%;
+  }
 }

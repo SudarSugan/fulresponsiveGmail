@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+   
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="2.css" />
+    <title>Gmail</title>
+  
+  </head>
+  <body>
+   <div id=container>
+    <!--Header start-->
+    <div class="header">
+      <div class="header_left">
+        <span class="material-icons"> menu </span>
+        <img src="image/gmail.jpg" alt="Gmail_Icon" />
+      </div>
+      <div class="header_middle">
+        <span class="material-icons"> search </span>
+        <input type="text" placeholder="Search all conversations" />
+      </div>
+      <div class="header_right">
+      
+        
+          <select name="Active" class="Active" >
+          <option value="Active">Active</option>
+          <option value="Do not distrub">Do not distrub</option>
+          <option value="Set as away">Set as away</option>
+          <option value="Add a status">Add a status</option>
+        </span>
+        </select>:
+        <span class="material-icons">
+          </span>
+        <span class="material-icons">
+          settings
+          </span>
+         
+        <span class="material-icons"> apps </span>
+        
+        <button type="button" class="check">
+          <!--<img src="image/gmail.jpg" alt="Gmail_Icon" />-->
+          <span class="material-icons">
+            account_circle
+            </span>
+        </button>
+       
+       
+      </div>
+    </div>
+    <!---Header ends-->
+    <!--main body starts-->
+    <dvi id="main_body">
+      <!--sidebar starts-->
+      <div id="sidebar">
+        
+        <button class="sidebar_compose">
+          
+          <span class="material-icons"> edit </span>
+        </button>
+        
+        <div class="sidebarOption sidebarOption_active">
+          
+          <span class="material-icons"> edit </span>
+          <h3>Inbox</h3>
+        </div>
+
+        <div class="sidebarOption">
+          <span class="material-icons"> star_outline </span>
+          <h3>Starred</h3>
+        </div>
+
+        <div class="sidebarOption">
+          <span class="material-icons"> schedule </span>
+          <h3>Snoozed</h3>
+        </div>
+        <div class="sidebarOption">
+          <span class="material-icons"> send </span>
+          <h3>Send</h3>
+        </div>
+        <div class="sidebarOption">
+          <span class="material-icons"> pending_actions </span>
+          <h3>Draft</h3>
+        </div>
+        <div class="sidebarOption sidebarOption_new">
+                   <h2>Chat</h2>
+                   <span class="material-icons">
+                    add
+                    </span>
+        </div>
+        <div class="sidebarOption sidebarOption_new">
+          <h2>Rooms</h2>
+          <span class="material-icons">
+            add
+            </span>
+</div>
+<div class="sidebarOption sidebarOption_new">
+  <h2>Meet</h2>
+  
+</div>
+      </div>
+      <!--siderbar ends-->
+      <!--email list starts-->
+      <div class="emailList">
+        <!--settings starts-->
+        <div class="emailList_settings">
+          <div class="emailList_settingleft">
+            <input type="checkbox" class="material-icons" />
+            <span class="material-icons"> expand_more </span>
+            <span class="material-icons"> refresh </span>
+            <span class="material-icons"> more_vert </span>
+          </div>
+          <div class="emailList_settingright">
+            <span class="material-icons"> chevron_left </span>
+            <span class="material-icons"> navigate_next </span>
+          </div>
+        </div>
+        <!--settings ends-->
+
+        <!--sectiion sarts-->
+        <!--<div class="emailList_section">
+          <div class="section section_selected">
+            <span class="material-icons"> inbox </span>
+            <h4>Primary</h4>
+          </div>
+          <div class="section">
+            <span class="material-icons"> group </span>
+            <h4>Social</h4>
+          </div>
+          <div class="section">
+            <span class="material-icons"> sell </span>
+            <h4>Promotion</h4>
+          </div>
+        </div>-->
+        <!--section ends-->
+        <!--email list row starts-->
+        <div id="emailList_list">
+          <!--email row starts-->
+          <div class="emailrow">
+            <div class="emailrow_option">
+              <input type="checkbox" />
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons"> label_important </span>
+            </div>
+            <h3 class="emailrow_title">youtube</h3>
+            <div class="emailrow_message">
+              <h4>
+                You got new
+                <span class="emailrow_description"> -on our mail have </span>
+              </h4>
+            </div>
+            <p class="emailrow_time">10 p.m</p>
+          </div>
+
+          <div class="emailrow">
+            <div class="emailrow_option">
+              <input type="checkbox" />
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons"> label_important </span>
+            </div>
+            <h3 class="emailrow_title">youtube</h3>
+            <div class="emailrow_message">
+              <h4>
+                You got new
+                <span class="emailrow_description"> -on our mail have </span>
+              </h4>
+            </div>
+            <p class="emailrow_time">10 p.m</p>
+          </div>
+          <div class="emailrow">
+            <div class="emailrow_option">
+              <input type="checkbox" />
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons"> label_important </span>
+            </div>
+            <h3 class="emailrow_title">youtube</h3>
+            <div class="emailrow_message">
+              <h4>
+                You got new
+                <span class="emailrow_description"> -on our mail have </span>
+              </h4>
+            </div>
+            <p class="emailrow_time">10 p.m</p>
+          </div>
+          <div class="emailrow">
+            <div class="emailrow_option">
+              <input type="checkbox" />
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons"> label_important </span>
+            </div>
+            <h3 class="emailrow_title">youtube</h3>
+            <div class="emailrow_message">
+              <h4>
+                You got new
+                <span class="emailrow_description"> -on our mail have </span>
+              </h4>
+            </div>
+            <p class="emailrow_time">10 p.m</p>
+          </div>
+          <!--email row ends-->
+          <!--main bodyright ends-->
+
+        <!--main body footer starts-->
+        <div class="footer">
+
+          <div class="block1">
+            <span class="allter">
+            <p>0 GB of 30 GB used</p></span>
+          </div>
+          <div class="block1">
+            <p> <span class="allter">Program Polices</span>
+              <br>
+              Powered by <span class="allter">Google</span>
+            </p>
+          </div>
+          <div class="block1">
+            <p>Last account activity : 27 minutes ago
+              <br>
+              <span class="allter">Details</span> 
+            </p>
+          </div>
+        </div>
+        <!--main body footer ends-->
+        </div>
+        <!--email list row ends-->
+      </div>
+      <!--email list ends-->
+
+      <!--main bodyright starts-->
+      <div class="body_right">
+        <div class="bodyright_left">
+          <span class="material-icons">
+            edit_calendar
+            </span>
+        </div>
+        <div class="bodyright_left">
+          <span class="material-icons">
+            lightbulb
+            </span>
+        </div>  
+        <div class="bodyright_left">
+          <span class="material-icons">
+            mode_edit
+            </span>
+        </div>
+        <div class="bodyright_left">
+          <span class="material-icons">
+            account_circle
+            </span>
+        </div>
+        <div class="bodyright_left">
+          <span class="material-icons">
+            add
+            </span>
+        </div>
+        </div>
+        
+      </div>
+    
+  
+    <!--main body ends-->
+ 
+
+</body>
+</html>
