@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, "Roboto", "RobotoDraft", sans-serif;
 }
 #container {
   width: 100%;
@@ -13,8 +14,10 @@
 }
 .header_left img {
   object-fit: contain;
-  height: 80px;
+  width: 109px;
+  height: 40px;
   margin-left: 5px;
+  margin-bottom: 4px;
 }
 .header {
   display: flex;
@@ -29,7 +32,10 @@
   align-items: center;
 }
 .header_left span {
-  padding: 10px;
+  margin: 0 4px;
+  padding: 12px;
+  height: 24px;
+  width: 24px;
   cursor: pointer;
 }
 .header_middle {
@@ -59,6 +65,7 @@
 .header_right span {
   padding: 10px;
   cursor: pointer;
+  
 }
 
 #sidebar {
@@ -102,8 +109,10 @@
 .sidebarOption h3 {
   flex: 1;
   margin-left: 10px;
-  font-size: 14px;
-  font-weight: 400;
+  font-family: "Roboto", "RobotoDraft", Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  letter-spacing: 0.2px;
+  font-weight: bold;
 }
 .sidebarOption:hover,
 .sidebarOption:hover h3,
@@ -227,6 +236,9 @@ input {
   font-weight: 400;
   color: gray;
 }
+.emailrow_title .emailrow_message .emailrow_time{
+  font-family: 'Roboto','RobotoDraft',Helvetica,Arial,sans-serif
+}
 
 .block1 {
   padding-top: 50px;
@@ -254,12 +266,14 @@ input {
   padding-top: 20px;
 }
 .rowicon span {
- height: 30px;
- width: 30px;
- background-color: whitesmoke;
- border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  background-color: whitesmoke;
+  border-radius: 50%;
 }
-
+.rowicon span material-icons {
+  align-items: center;
+}
 @media (min-width: 400px) {
   #container .emailList .body_right .header .header_right {
     width: 200px;
